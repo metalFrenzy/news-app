@@ -3,9 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/features/get_news_articles/presentation/cubit/theme_cubit.dart';
 import 'package:news_app/features/get_news_articles/presentation/screens/news_overview_screen.dart';
 import 'package:news_app/theme.dart';
+import 'injection_container.dart' as di;
 
-
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
   runApp(MyApp());
 }
 
@@ -31,4 +33,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
