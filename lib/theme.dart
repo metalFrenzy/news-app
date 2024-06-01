@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final lightTheme = ThemeData(
+  cardColor: Colors.white,
+  scaffoldBackgroundColor: Color.fromARGB(255, 247, 247, 247),
   brightness: Brightness.light,
   textTheme: TextTheme(
     bodyLarge: GoogleFonts.mulish(
-      fontSize: 16,
+      fontSize: 18,
       color: Color.fromARGB(255, 21, 21, 28),
       fontWeight: FontWeight.w600,
     ),
     bodyMedium: GoogleFonts.mulish(
-      fontSize: 14,
+      fontSize: 16,
       color: Color.fromARGB(255, 21, 21, 28),
       fontWeight: FontWeight.w400,
     ),
@@ -19,20 +21,32 @@ final lightTheme = ThemeData(
       color: Color.fromARGB(255, 21, 21, 28),
       fontWeight: FontWeight.bold,
     ),
-    // Add other text styles as needed
+     bodySmall: GoogleFonts.mulish(
+      color: Color.fromARGB(255, 21, 21, 28),
+      fontSize: 16,
+      height: 1.5,
+    ),
+    displayMedium:GoogleFonts.mulish(
+      color: Color.fromARGB(255, 21, 21, 28),
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+    ), 
+    
   ),
 );
 
 final darkTheme = ThemeData(
+  cardColor: Color.fromARGB(255, 46, 46, 46),
+  scaffoldBackgroundColor: Color.fromARGB(255, 35, 35, 35),
   brightness: Brightness.dark,
   textTheme: TextTheme(
     bodyLarge: GoogleFonts.mulish(
-      fontSize: 16,
+      fontSize: 18,
       color: Color.fromARGB(255, 244, 241, 241),
       fontWeight: FontWeight.w600,
     ),
     bodyMedium: GoogleFonts.mulish(
-      fontSize: 14,
+      fontSize: 16,
       color: Color.fromARGB(255, 244, 241, 241),
       fontWeight: FontWeight.w400,
     ),
@@ -41,6 +55,16 @@ final darkTheme = ThemeData(
       color: Color.fromARGB(255, 244, 241, 241),
       fontWeight: FontWeight.bold,
     ),
-    // Add other text styles as needed
+    bodySmall: GoogleFonts.mulish(
+      color: Color.fromARGB(255, 244, 241, 241),
+      fontSize: 16,
+      height: 1.5,
+    ),
+    displayMedium:GoogleFonts.mulish(
+      color: Color.fromARGB(255, 244, 241, 241),
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+    ), 
+    
   ),
 );

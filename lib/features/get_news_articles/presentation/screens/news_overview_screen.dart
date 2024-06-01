@@ -39,11 +39,7 @@ class NewsOverviewScreen extends StatelessWidget {
         centerTitle: true,
         title: Text(
           'Frenzy News',
-          style: GoogleFonts.mulish(
-            fontSize: 20,
-            color: Color.fromARGB(255, 21, 21, 28),
-            fontWeight: FontWeight.bold,
-          ),
+          style: Theme.of(context).textTheme.displayMedium
         ),
       ),
       body: BlocProvider(

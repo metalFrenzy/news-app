@@ -29,7 +29,7 @@ class NewsListTileWidget extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         width: double.infinity,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).cardColor,
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
@@ -67,11 +67,7 @@ class NewsListTileWidget extends StatelessWidget {
                   Text(
                     article.title,
                     textAlign: TextAlign.start,
-                    style: GoogleFonts.mulish(
-                      fontSize: 18,
-                      color: const Color.fromARGB(255, 21, 21, 28),
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: Theme.of(context).textTheme.bodyLarge,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -81,11 +77,7 @@ class NewsListTileWidget extends StatelessWidget {
                   Text(
                     article.sourceName,
                     textAlign: TextAlign.start,
-                    style: GoogleFonts.mulish(
-                      fontSize: 16,
-                      color: const Color.fromARGB(255, 21, 21, 28),
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: Theme.of(context).textTheme.bodyMedium,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

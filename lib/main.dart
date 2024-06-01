@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
             title: 'News App',
             theme: context.read<ThemeCubit>().themeData,
             home: NewsOverviewScreen(),
+            debugShowCheckedModeBanner: false,
           );
         },
       ),
